@@ -39,36 +39,6 @@ const dragonScales = {0: {0: "A0", 1: "D1", 2: "F1", 3: "A1", 4: "D2", 5: "F2", 
 3: {0: "A0", 1: "C#1", 2: "E1", 3: "A1", 4: "C#2", 5: "E2", 6: "A2", 7: "C#3", 8: "E3", 9: "A3", 10: "C#4",
 11: "E4", 12: "A4", 13: "C#5", 14: "E5", 15: "A5", 16: "C#6", 17: "E6", 18: "A6", 19: "C#7", 20: "E7", 21: "A7"}};
 
-/*const tigerScales = {0: {0: ["A0", "A1", "A#2", "A#3"], 1: ["C1", "C#2", "C3", "B3"], 2: ["A1", "F#2", "D3", "B3"], 
-3: ["C2", "G#2", "E3", "C4"], 4: ["E2", "B2", "F3", "C4"], 5: ["A#2", "D#3", "G#3", "C#4"], 6: ["C#3", "F3", "A3", "C#4"], 
-7: ["E3", "G3", "A#3", "C#4"], 8: ["G3", "A3", "C4", "D4"], 9: ["A#3", "C4", "C#4", "D#4"], 10: ["C#4", "D4", "D#4", "E4"], 
-11: ["D#4", "F4", "F#4", "G#4"], 12: ["D#4", "F#4", "A4", "C5"], 13: ["E4", "G#4", "B4", "D#5"], 14: ["E4", "A4", "C#5", "F#5"], 
-15: ["E4", "A#4", "E5", "A#5"], 16: ["F4", "C5", "G5", "D6"], 17: ["F4", "C#5", "A5", "F6"], 18: ["F4", "E6", "C#6", "A#6"], 
-19: ["F#4", "F5", "F6", "E7"], 20: ["G4", "G5", "G#6", "G#7"], 21: ["G4", "A5", "A#6", "C8"]},
-
-1: {0: ["A0", "A1", "A#2", "A#3"], 1: ["C1", "C#2", "C3", "B3"], 2: ["A1", "F#2", "D3", "B3"], 
-3: ["C2", "G#2", "E3", "C4"], 4: ["E2", "B2", "F3", "C4"], 5: ["A#2", "D#3", "G#3", "C#4"], 6: ["C#3", "F3", "A3", "C#4"], 
-7: ["E3", "G3", "A#3", "C#4"], 8: ["G3", "A3", "C4", "D4"], 9: ["A#3", "C4", "C#4", "D#4"], 10: ["C#4", "D4", "D#4", "E4"], 
-11: ["D#4", "F4", "F#4", "G#4"], 12: ["D#4", "F#4", "A4", "C5"], 13: ["E4", "G#4", "B4", "D#5"], 14: ["E4", "A4", "C#5", "F#5"], 
-15: ["E4", "A#4", "E5", "A#5"], 16: ["F4", "C5", "G5", "D6"], 17: ["F4", "C#5", "A5", "F6"], 18: ["F4", "E6", "C#6", "A#6"], 
-19: ["F#4", "F5", "F6", "E7"], 20: ["G4", "G5", "G#6", "G#7"], 21: ["G4", "A5", "A#6", "C8"]},
-
-2: {0: ["A0", "A1", "A#2", "A#3"], 1: ["C1", "C#2", "C3", "B3"], 2: ["A1", "F#2", "D3", "B3"], 
-3: ["C2", "G#2", "E3", "C4"], 4: ["E2", "B2", "F3", "C4"], 5: ["A#2", "D#3", "G#3", "C#4"], 6: ["C#3", "F3", "A3", "C#4"], 
-7: ["E3", "G3", "A#3", "C#4"], 8: ["G3", "A3", "C4", "D4"], 9: ["A#3", "C4", "C#4", "D#4"], 10: ["C#4", "D4", "D#4", "E4"], 
-11: ["D#4", "F4", "F#4", "G#4"], 12: ["D#4", "F#4", "A4", "C5"], 13: ["E4", "G#4", "B4", "D#5"], 14: ["E4", "A4", "C#5", "F#5"], 
-15: ["E4", "A#4", "E5", "A#5"], 16: ["F4", "C5", "G5", "D6"], 17: ["F4", "C#5", "A5", "F6"], 18: ["F4", "E6", "C#6", "A#6"], 
-19: ["F#4", "F5", "F6", "E7"], 20: ["G4", "G5", "G#6", "G#7"], 21: ["G4", "A5", "A#6", "C8"]},
-
-3: {0: ["A0", "A1", "A#2", "A#3"], 1: ["C1", "C#2", "C3", "B3"], 2: ["A1", "F#2", "D3", "B3"], 
-3: ["C2", "G#2", "E3", "C4"], 4: ["E2", "B2", "F3", "C4"], 5: ["A#2", "D#3", "G#3", "C#4"], 6: ["C#3", "F3", "A3", "C#4"], 
-7: ["E3", "G3", "A#3", "C#4"], 8: ["G3", "A3", "C4", "D4"], 9: ["A#3", "C4", "C#4", "D#4"], 10: ["C#4", "D4", "D#4", "E4"], 
-11: ["D#4", "F4", "F#4", "G#4"], 12: ["D#4", "F#4", "A4", "C5"], 13: ["E4", "G#4", "B4", "D#5"], 14: ["E4", "A4", "C#5", "F#5"], 
-15: ["E4", "A#4", "E5", "A#5"], 16: ["F4", "C5", "G5", "D6"], 17: ["F4", "C#5", "A5", "F6"], 18: ["F4", "E6", "C#6", "A#6"], 
-19: ["F#4", "F5", "F6", "E7"], 20: ["G4", "G5", "G#6", "G#7"], 21: ["G4", "A5", "A#6", "C8"]},
-
-};*/
-
 let scaleIndex=0, noteIndexLeft=0.5, noteIndexRight=0.5, pianoVelLeft=0.5, pianoVelRight=0.5, mouthLine=3;
 
 //create midi note loop
@@ -80,16 +50,6 @@ const leftLoop = new Tone.Loop((time) => {
 const rightLoop = new Tone.Loop((time) => {
   piano.triggerAttackRelease(dragonScales[scaleIndex][noteIndexRight], 1, time, pianoVelRight);
 }, "16n");
-
-/*create midi note loop
-const leftTigerLoop = new Tone.Loop((time) => {
-  piano.triggerAttackRelease(tigerScales[scaleIndex][noteIndexLeft], 0.25, time, pianoVelLeft);
-}, "16n");
-
-//create midi note loop
-const rightTigerLoop = new Tone.Loop((time) => {
-  piano.triggerAttackRelease(tigerScales[scaleIndex][noteIndexRight], 0.25, time, pianoVelRight);
-}, "16n");*/
 
 //linear scaling function
 function scaleValue(value, from, to) {
@@ -162,9 +122,6 @@ function Trigger2(leftThumbX, leftPinkyX) {
 function onResults(results) {
   canvasCtx.save();
   canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
-  //canvasCtx.drawImage(results.segmentationMask, 0, 0,
-  //                    canvasElement.width, canvasElement.height);
-
   // Only overwrite existing pixels.
   canvasCtx.globalCompositeOperation = 'source-in';
   canvasCtx.fillStyle = '#00FF00';
@@ -176,14 +133,8 @@ function onResults(results) {
       results.image, 0, 0, canvasElement.width, canvasElement.height);
 
   canvasCtx.globalCompositeOperation = 'source-over';
-  //drawConnectors(canvasCtx, results.poseLandmarks, POSE_CONNECTIONS,
-  //               {color: '#00FF00', lineWidth: 4});
-  //drawLandmarks(canvasCtx, results.poseLandmarks,
-  //              {color: '#FF0000', lineWidth: 2});
   drawConnectors(canvasCtx, results.faceLandmarks, FACEMESH_LIPS, 
                 {color: '#FF0000', lineWidth: mouthLine});
-  //drawConnectors(canvasCtx, results.faceLandmarks, FACEMESH_TESSELATION,
-  //               {color: '#C0C0C070', lineWidth: 1});
   drawConnectors(canvasCtx, results.leftHandLandmarks, HAND_CONNECTIONS,
                  {color: '#FF0000', lineWidth: 3});
   drawLandmarks(canvasCtx, results.leftHandLandmarks,
@@ -218,7 +169,6 @@ function onResults(results) {
     setInterval(leftVelocityCounter(leftIndex.x, leftIndex.y), 100);
   } else {
     leftLoop.stop();
-    //leftTigerLoop.stop();
   }
   if(results.leftHandLandmarks){
     rightIndex = results.leftHandLandmarks[8];
@@ -229,7 +179,6 @@ function onResults(results) {
     if (rightThumb && rightPinky){Trigger2(rightThumb.x, rightPinky.x)};
   } else {
     rightLoop.stop();
-    //rightTigerLoop.stop();
   }
 };
 
